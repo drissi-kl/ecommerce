@@ -1,10 +1,11 @@
 import { useState } from 'react'
+import Home from './views/home'
 
 export default function App() {
 
-  return ( <main className='text-md'>
-    e-commerce
-  </main> )
+  return <main>
+    <Home />
+  </main>
 }
 
 
