@@ -2,18 +2,24 @@ import { Heart, Search, ShoppingCart } from 'lucide-react'
 import React from 'react'
 
 export default function TopHeader() {
-  return <main className='flex justify-between px-[200px] py-4'>
+  return <main className='flex justify-between px-[200px] py-1'>
     <div className='w-[100px] '>
         <img src="/logo.png" alt="logo" />
     </div>
 
-    <div className='border border-blue-500 rounded-full flex items-center overflow-hidden'>
-        <input type="text" placeholder='search ...' 
-            className='px-3 h-[100%] focus:outline-0 '
-            />
-        <button className='bg-blue-500 px-2 h-[100%] '>
-            <Search color='white' />
-        </button>
+    <div className='flex items-center  basis-[300px] '>
+        <div className='flex items-center border border-blue-500 rounded-xl overflow-hidden w-[100%]'>
+
+            <input type="text" placeholder='search ...' 
+                className='focus:outline-0  w-[100%] px-2 py-1'
+            /> 
+            
+            <button className='bg-blue-500 p-2 h-[100%] '>
+                <Search color='white'  />
+            </button>
+
+        </div>
+        
     </div>
 
     <div className='flex gap-3'>

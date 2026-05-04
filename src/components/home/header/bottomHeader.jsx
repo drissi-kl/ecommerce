@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { ChevronDown, ChevronRight, LogOut } from 'lucide-react'
 import React, { useState } from 'react'
-import { getCategoriesApi } from '../../services/products';
+import { getCategoriesApi } from '../../../services/products';
 
 export default function BottomHeader() {
 
