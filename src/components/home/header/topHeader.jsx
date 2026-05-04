@@ -8,7 +8,7 @@ export default function TopHeader() {
     </div>
 
     <div className='flex items-center  basis-[300px] '>
-        <div className='flex items-center border border-blue-500 rounded-xl overflow-hidden w-[100%]'>
+        <div className='flex items-center border border-blue-500 rounded-2xl overflow-hidden w-[100%]'>
 
             <input type="text" placeholder='search ...' 
                 className='focus:outline-0  w-[100%] px-2 py-1'

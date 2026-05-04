@@ -21,7 +21,7 @@ export default function BottomHeader() {
         <div className='px-[200px]  flex justify-between  '>
             <menu className='flex relative  '>
                 {
-                    showCategories && <div className='absolute bg-white z-1 top-[50px] h-[300px] overflow-y-scroll shadow-2xl '
+                    showCategories && <div className='absolute bg-white z-5 top-[50px] h-[300px] overflow-y-scroll shadow-2xl '
                         
                         >
                         <ul >

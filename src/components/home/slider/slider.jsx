@@ -15,16 +15,16 @@ import { Pagination, Autoplay } from 'swiper/modules';
 export default function App() {
 
   const swiperData = [
-    {image: 'banner_Hero1.jpg', text: "Choose your game, and we’ll provide the power."},
-    {image: 'banner_Hero2.jpg', text: "Experience sound the smart way."},
-    {image: 'banner_Hero3.jpg', text: "sdf asdf asd fsdf asdf"},
-  ] 
+    { image: 'banner_Hero1.jpg', text: "Choose your game, and we’ll provide the power." },
+    { image: 'banner_Hero2.jpg', text: "Experience sound the smart way." },
+    { image: 'banner_Hero3.jpg', text: "sdf asdf asd fsdf asdf" },
+  ]
 
   return (
     <>
       <Swiper
         modules={[Pagination, Autoplay]}
-        
+
         pagination={{
           dynamicBullets: true,
           clickable: true,
@@ -36,14 +36,22 @@ export default function App() {
         className="mySwiper"
 
       >
-        <SwiperSlide>
-          <div className="swiper-item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, iure.</p>
-            <img src="banner_Hero1.jpg" alt="" />
-          </div>
-        </SwiperSlide>
+        {
+          swiperData.map((item, index) => {
+            return <SwiperSlide key={index}>
+              <div className="swiper-item">
+                <div className="contentSlider">
+                  <p>{item.text}</p>
+                  <button>show now</button>
+                </div>
+                <img src={item.image} alt={item.image} />
+              </div>
+            </SwiperSlide>
+          })
+        }
 
-        
+
+
       </Swiper>
     </>
   );
