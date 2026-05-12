@@ -1,0 +1,32 @@
+.slideProducts .swiper {
+    margin: 20px auto ;
+    width: calc(100vw - 400px);
+}
+
+.slideProducts .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 1px solid rgb(199, 208, 247);
+
+}
+.slideProducts .swiper-slide:hover{
+    border: 1px solid rgb(36, 74, 240);
+    transform: scale(0.99);
+
+}
+
+.slideProducts .slideProduct .slideProductImage{
+    background-color: aquamarine;
+}
+.slideProducts .slideProduct .slideProductImage img{
+    height: 50%;
+}
+

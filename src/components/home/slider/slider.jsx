@@ -34,7 +34,6 @@ export default function App() {
         }}
         loop={true}
         className="mySwiper"
-
       >
         {
           swiperData.map((item, index) => {
